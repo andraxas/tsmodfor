@@ -504,7 +504,7 @@ PronGroupTs <- function(TsTrans,TsTend,TsSea,TsMod,TendRad,SeaRad,ModRad,ciclos,
 tsmodfordummy <- function()
 {
 
-  mes<-"Hola Mundo desde tsmodfor 2019/09/29_18:29"
+  mes<-"Hola Mundo desde tsmodfor 2019/09/29_20:16"
   return(mes)
 }
 
@@ -1162,7 +1162,7 @@ appshinyts <- function() {
 
     output$WorkTsPlot <- renderPlot({
       #     stl(x,s.window=1)
-      plot(x.trans.ts())
+      plot(x.trans.ts(),main="Tramo de serie de tiempo a procesar")
       #     return(m$figure)
     })
 
@@ -1173,17 +1173,17 @@ appshinyts <- function() {
       bins <- seq(min(x.trans.ts()), max(x.trans.ts()), length.out = input$bins + 1)
 
       # draw the histogram with the specified number of bins
-      hist(x.trans.ts(), breaks = bins, col = 'darkgray', border = 'white',freq = FALSE)
-      lines(density(x.trans.ts()),col='red', lwd = 2)
+      hist(x.trans.ts(), breaks = bins, col = 'darkgray', border = 'white',freq = FALSE, main="Histograma de la serie de tiempo")
+      lines(density(x.trans.ts()),col='red', lwd = 2,main="Función de densidad de probabilidad de la serie de tiempo")
 
     })
 
     output$AcfPlot <- renderPlot({
-      acf(x.trans.ts())
+      acf(x.trans.ts(),main="ACF de la serie de tiempo")
     })
 
     output$PacfPlot <- renderPlot({
-      pacf(x.trans.ts())
+      pacf(x.trans.ts(),main="Pacf de la serie de tiempo")
     })
 
     decom <- reactive({
@@ -1195,15 +1195,15 @@ appshinyts <- function() {
     })
 
     output$AcfRandomPlot <- renderPlot({
-      acf(na.omit((decom())$random))
+      acf(na.omit((decom())$random), main="ACF de los residuos de la descomposición")
     })
 
     output$PacfRandomPlot <- renderPlot({
-      pacf(na.omit((decom())$random))
+      pacf(na.omit((decom())$random), main="PACF de los residuos de la descomposición")
     })
 
     output$SpectrumPlot <- renderPlot({
-      spectrum(na.omit(x.trans.ts()))
+      spectrum(na.omit(x.trans.ts()), main="Espectro en el dominio de la frecuencia")
     })
 
 
