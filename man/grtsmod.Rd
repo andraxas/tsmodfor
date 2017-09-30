@@ -2,16 +2,18 @@
 % Please edit documentation in R/tsmodfor_01.R
 \name{grtsmod}
 \alias{grtsmod}
-\title{Grafica el desempe√±o del modelado de la serie de tiempo como AR, MA, ARMA, ARIMA, Holt-Winters}
+\title{grtsmod}
 \usage{
 grtsmod(mod, xts, Time)
 }
 \arguments{
-\item{infile}{Path to the input file}
+\item{mod}{Es el modelo de la serie de tiempo}
+\item{xts}{Es la informaciÛn que se consignar· en el eje x}
+\item{time}{Es el tiempo de la serie indicado por el usuario}
 }
 \value{
 A matrix of the infile
 }
 \description{
-Grafica el desempe√±o del modelado de la serie
+Grafica el desempe√±o del modelado de la serie de tiempo como AR, MA, ARMA, ARIMA, Holt-Winters.
 }
