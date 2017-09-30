@@ -2,17 +2,18 @@
 % Please edit documentation in R/tsmodfor_01.R
 \name{TsModel}
 \alias{TsModel}
-\title{Modelar la serie de tiempo como AR, MA, ARMA, ARIMA, Holt-Winters}
+\title{TsModel}
 \usage{
 TsModel(mtyp, xts)
 }
 \arguments{
-\item{mtyp, }{xts, Time}
+\item{mtyp}{es una entrada numérica para la componente estacional}
+\item{xts}{es la serie de los datos previa al modelamiento}
 }
 \value{
 A matrix of the infile
 }
 \description{
-Modela la serie de tiempo, devuelve una serie de tiempo
-residual.
+Modelar la serie de tiempo como AR, MA, ARMA, ARIMA, Holt-Winters. devuelve una serie de tiempo
+residual
 }

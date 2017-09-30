@@ -2,16 +2,16 @@
 % Please edit documentation in R/tsmodfor_01.R
 \name{tsmodfordummy}
 \alias{tsmodfordummy}
-\title{Demo text}
+\title{tsmodfordummy}
 \usage{
 tsmodfordummy()
 }
 \arguments{
-\item{infile}{Path to the input file}
+
 }
 \value{
 A matrix of the infile
 }
 \description{
-Demo text
+Esta funcion se usa como validacion, para garantizar que la funcion se esta compilando adecuadamente. Genera un texto demostrativo
 }

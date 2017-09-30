@@ -2,12 +2,13 @@
 % Please edit documentation in R/tsmodfor_01.R
 \name{TsSeaModel}
 \alias{TsSeaModel}
-\title{Modelar la estacionalidad de la serie de tiempo}
+\title{TsSeaModel}
 \usage{
 TsSeaModel(mtyp, xts)
 }
 \arguments{
-\item{infile}{Path to the input file}
+\item{mtyp}{es una entrada numérica para la componente estacional}
+\item{xts}{es la serie de los datos previa al modelamiento}
 }
 \value{
 A matrix of the infile

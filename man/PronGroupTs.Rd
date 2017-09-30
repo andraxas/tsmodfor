@@ -2,17 +2,22 @@
 % Please edit documentation in R/tsmodfor_01.R
 \name{PronGroupTs}
 \alias{PronGroupTs}
-\title{Consolidar series de tiempo ajustadas AR, MA, ARMA, ARIMA, Holt-Winters}
+\title{PronGroupTs}
 \usage{
 PronGroupTs(TsTrans, TsTend, TsSea, TsMod, TendRad, SeaRad, ModRad, ciclos, CI)
 }
 \arguments{
-\item{mtyp, }{xts, Time}
+\item{TsTrans}{Transformación realizada a la serie de tiempo}
+\item{TsTrend}{Recibe el ajuste realizado a la tendencia de la serie de tiempo}
+\item{TsSea}{Modelamiento de la estacionalidad}
+\item{TenRad}{Esta función trae la opción marcada por el usuario para la tendencia}
+\item{SeaRad}{Esta función trae la opción marcada por el usuario para la estacionalidad}
+\item{ModRad}{Esta función trae la opción marcada por el usuario para el modelo}
+\item{ciclos}{Recibe el modelo identificado para los ciclos}
 }
 \value{
 A matrix of the infile
 }
 \description{
-Modela la serie de tiempo, devuelve una serie de tiempo
-residual.
+sta función hace las predicciones de la serie de tiempo, consolidando las series de tiempo ajustadas AR, MA, ARMA, ARIMA, Holt-Winters, siguiendo cada una de las especificaciones asignadas por el usuario para el modelamiento de la misma. Modela la serie de tiempo y devuelve una serie de tiempo residual.
 }
