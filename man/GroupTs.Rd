@@ -7,14 +7,12 @@
 GroupTs(TsTrans, TsTend, TsSea, TsMod, TendRad, SeaRad, ModRad)
 }
 \arguments{ TsTrans: Transformación realizada a la serie de tiempo.
-TsTrend: Recibe el ajuste realizado a la tendencia de la serie de tiempo.
-TsSea: Modelamiento de la estacionalidad.
-TenRad: Esta función trae la opción marcada por el usuario para la tendencia.
-SeaRad: Esta función trae la opción marcada por el usuario para la estacionalidad.
-ModRad: Esta función trae la opción marcada por el usuario para el modelo.
-Ciclos: Recibe el modelo identificado para los ciclos.
-
-\item{mtyp, }{xts, Time}
+\item{TsTrend}{Recibe el ajuste realizado a la tendencia de la serie de tiempo.}
+\item{TsSea}{Modelamiento de la estacionalidad.}
+\item{TenRad}{Esta función trae la opción marcada por el usuario para la tendencia.}
+\item{SeaRad}{Esta función trae la opción marcada por el usuario para la estacionalidad.}
+\item{ModRad}{Esta función trae la opción marcada por el usuario para el modelo.}
+\item{Ciclos}{Recibe el modelo identificado para los ciclos.}
 }
 \value{
 A matrix of the infile

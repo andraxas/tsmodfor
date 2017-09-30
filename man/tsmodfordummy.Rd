@@ -7,11 +7,11 @@
 tsmodfordummy()
 }
 \arguments{
-\item{Esta función no tiene argumentos}
+
 }
 \value{
 A matrix of the infile
 }
 \description{
-Esta función se usa como validación, para garantizar que la función se esté compilando adecuadamente. Genera un texto demostrativo
+Esta funcion se usa como validacion, para garantizar que la funcion se esta compilando adecuadamente. Genera un texto demostrativo
 }
