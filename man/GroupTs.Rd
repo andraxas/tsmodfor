@@ -6,13 +6,19 @@
 \usage{
 GroupTs(TsTrans, TsTend, TsSea, TsMod, TendRad, SeaRad, ModRad)
 }
-\arguments{
+\arguments{ TsTrans: Transformación realizada a la serie de tiempo.
+TsTrend: Recibe el ajuste realizado a la tendencia de la serie de tiempo.
+TsSea: Modelamiento de la estacionalidad.
+TenRad: Esta función trae la opción marcada por el usuario para la tendencia.
+SeaRad: Esta función trae la opción marcada por el usuario para la estacionalidad.
+ModRad: Esta función trae la opción marcada por el usuario para el modelo.
+Ciclos: Recibe el modelo identificado para los ciclos.
+
 \item{mtyp, }{xts, Time}
 }
 \value{
 A matrix of the infile
 }
 \description{
-Modela la serie de tiempo, devuelve una serie de tiempo
-residual.
+Esta función recibe el ajuste realizado a la tendencia, a la estacionalidad y a los errores, los agrupa y muestra el ajuste total realizado.
 }
