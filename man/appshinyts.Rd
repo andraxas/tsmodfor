@@ -10,7 +10,5 @@ appshinyts()
 none
 }
 \description{
-Aplicación que permite analizar series de tiempo  y realizar modelamiento con series
-que contienen tendencia Lineal, Cuadrática o Cúbica.
-Estacionalidad, patrones modelables como AR, MA, ARMA, ARIMA y Holt-Winters.
+Esta función permite ejecutar la aplicación de Shiny para el análisis estadístico de series de tiempo. Esta permite realizar modelamiento de series con tendencia lineal, cuadrática o cúbica, permite modelar la estacionalidad e identificar patrones como AR, MA, ARMA, ARIMA y Holt.Winters.
 }
